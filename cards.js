@@ -16,7 +16,7 @@ function createCard() {
 function deleteBtnEl() { 
 	for(var i = 0; i < erase.length; i++) {
 		erase[i].addEventListener("click", function(event) {
-		   container.remove(event.target.parentElement)
+		   erase[i].remove(event.target.parentElement);
 			// console.log(event.target.parentElement)
 		});
 	}
